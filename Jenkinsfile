@@ -9,7 +9,7 @@ pipeline{
         stage('Build'){
             steps{
                 echo "This is the build stage for maven"
-                sh 'node --version'
+                sh 'mvn --version'
 		sh 'docker version'
             }
         }
